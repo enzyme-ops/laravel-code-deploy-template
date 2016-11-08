@@ -1,5 +1,5 @@
 # Laravel CodeDeploy Template
-A template for deploying Laravel applications with AWS CodeDeploy.
+A template for deploying Laravel applications with AWS CodeDeploy across an autoscaling group.
 
 ## IAM Roles
 The following roles should be created **BEFORE** any launch configurations, autoscaling groups or CodeDeploy applications are created as they'll be needed during that creation process.
