@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/snapshot
+hooks:
+  BeforeInstall:
+    - location: scripts/deregister_from_elb.sh
+      timeout: 400
+  AfterInstall:
+    - location: scripts/finish_install.sh
+  ApplicationStart:
+    - location: scripts/bind_app.sh
+      timeout: 120
+      runas: root
+    - location: scripts/register_with_elb.sh
+      timeout: 120
