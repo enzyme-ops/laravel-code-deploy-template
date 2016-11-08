@@ -6,12 +6,12 @@ The following roles should be created **BEFORE** any launch configurations, auto
 
 `code-deploy-role`
 
-Requires the pre-baked policy **AWSCodeDeployRole**
+ - Requires the pre-baked policy **AWSCodeDeployRole**
 
 `code-deploy-ec2-instance-role`
 
-Requires the pre-baked policy **AmazonEC2FullAccess**
-Requires a custom policy **code-deploy-ec2-permissions** with the follow:
+ - Requires the pre-baked policy **AmazonEC2FullAccess**
+ - Requires a custom policy **code-deploy-ec2-permissions** with the following:
 ```json
 {
     "Version": "2012-10-17",
