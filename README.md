@@ -43,6 +43,7 @@ The following roles should be created **BEFORE** any launch configurations, auto
 ## Usage
  - Make sure `composer` and `npm` have been run and all dependencies are up to date and that the application works as expected locally and on staging
  - Use `bundle.sh` to automatically create a `tar.gz` archive of your Laravel application and upload it to the S3 bucket folder `bundles`
+ - The `bundle.sh` will tar only the directories and files listed in `bundle.conf`
  - Create a new CodeDeploy revision deployment using S3 as the source and point the endpoint to the one provided by the `bundle.sh` script
 
 ## Provisioner overview
