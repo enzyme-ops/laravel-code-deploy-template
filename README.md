@@ -30,7 +30,7 @@ The following roles should be created **BEFORE** any launch configurations, auto
 
 ## Requirements
  - A compatible **Ubuntu 16.04** AMI (use the provided **provision.sh** script on a fresh instance and save an AMI image from that)
- - A classic load balancer
+ - A classic load balancer (preferably with sticky connections [5mins+])
  - An AWS launch configuration (using the aforementioned AMI) and an autoscaling group
  - A CodeDeploy application and deployment group that references the aforementioned autoscaling group
  - A S3 bucket for your application with two folders contained within: `bundles` and `env`
