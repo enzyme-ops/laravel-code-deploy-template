@@ -10,7 +10,7 @@ echo "[*] Done!"
 
 echo "[*] Creating bundle for commit $HASH..."
 echo "[*] This operation may take several minutes..."
-tar --exclude='*.git*' --exclude='*.DS_Store*' --exclude='storage/framework/*' --exclude='storage/logs/*' -zcf $BUNDLE -T bundle.conf > /dev/null 2>&1
+tar --exclude='*.git*' --exclude='*.DS_Store*' --exclude='storage/logs/*' -zcf $BUNDLE -T bundle.conf > /dev/null 2>&1
 echo "[*] Done!"
 
 echo "[*] Uploading bundle to S3..."
