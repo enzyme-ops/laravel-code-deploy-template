@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy the production environment file from S3 to the local installation
-aws s3 cp s3://ergon-ebill/env/production.env /var/www/snapshot/.env
+aws s3 cp s3://XXX/env/production.env /var/www/snapshot/.env
 
 # Setup the various file and folder permissions for Laravel
 chown -R ubuntu:www-data /var/www/snapshot
