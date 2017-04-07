@@ -4,7 +4,7 @@
 add-apt-repository -y ppa:brightbox/ruby-ng-experimental
 
 # Add node source respository
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 
 # Update APT
 apt update
